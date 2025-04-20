@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Hobby- Coding</title>
+    <style>
+        .white {
+        background-color: #4a625f;
+      }
+      .white .contanier {
+        background-color: black;
+        color: white;
+      }
+      body {
+        background-color: #bfd8d5;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+      .contanier {
+        max-width: 600px;
+        background: #fafaf6;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 0 auto;
+      }
+
+      img {
+        max-width: 100%;
+        width: 600px;
+        margin: 0 auto;
+      }
+
+      .button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #bfd8d5;
+        background: white;
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 15px 10px;
+        transition: all 200ms ease-in-out;
+      }
+      .button:hover {
+        background-color: #bfd8d5;
+        cursor: pointer;
+      }
+      footer {
+        text-align: center;
+        margin: 10px 0;
+      }
+      .btn {
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 11px;
+        display: block;
+        margin: 10px auto;
+        transition: all 200ms ease-in-out;
+      }
+
+      .btn:hover,
+      .btn:focus {
+        background-color: white;
+        color: black;
+        border: none;
+      }
+      .img1 {
+        margin: 20px 0;
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .img1:hover {
+        filter: contrast(80%);
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+      }
+
+      .img2 {
+        border-radius: 10px;
+        height: 100px;
+        transition: all 200ms ease-in-out;
+      }
+      .img2:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      p {
+        line-height: 1.2;
+        font-size: 20px;
+      }
+      
+    </style>
+  </head>
+
+  <body class="white">
+    <button class="btn">Change Theme</button>
+    <div class="contanier">
+      <h1>Coding😎👩‍💻</h1>
+      <h2>My favourite hobby</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/153/753/original/pexels-thisisengineering-3861958.jpg?1735557312"
+        alt=""
+        height="300px"
+        class="img1"
+      />
+
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/153/752/original/pexels-pixabay-270404.jpg?1735557296"
+          alt=""
+          height="300px"
+          class="img2"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/153/754/original/pexels-divinetechygirl-1181279.jpg?1735557330"
+          alt=""
+          height="300px"
+          class="img2"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/153/750/original/pexels-divinetechygirl-1181243.jpg?1735557270"
+          alt=""
+          height="300px"
+          class="img2"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/153/749/original/goran-ivos-iOykDIkZLQw-unsplash.jpg?1735557250"
+          alt=""
+          height="300px"
+          class="img2"
+        />
+      </div>
+      <p>
+        Coding, also known as programming, is the process of creating
+        instructions that a computer can follow to perform specific tasks. These
+        instructions are written in languages that computers can understand,
+        such as Python, JavaScript, C++, or HTML. At its core, coding is about
+        solving problems and building solutions, whether that’s creating a
+        website, developing an app, automating repetitive tasks, or even
+        programming robots.
+      </p>
+
+      <button class="button">
+        <a href="https://www.shecodes.io/">Start a free class with SheCodes</a>
+      </button>
+    </div>
+    <footer>Coded by Charwekey Rabi Sabutey😍</footer>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        // if (body.classList.contains("white")) {
+        //   body.classList.remove("white");
+        // } else {
+        //   body.classList.add("white");
+        // }
+        body.classList.toggle("white")
+      }
+      let button = document.querySelector(".btn");
+      button.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
+

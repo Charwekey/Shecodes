@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greek Yogurt</title>
+<style>
+    h1{
+        text-align: center;
+        color:#854836;
+    }
+    h2{
+        text-align: center;
+        border: 1px solid  #854836;
+        padding: 20px ;
+        font-size: 18px;
+        border-radius: 4px;
+    }
+
+    img{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    p{
+        line-height: 1.5;
+        font-size: 18px;
+       
+    }
+
+    button{
+        display: block;
+        margin: 0 auto;
+        color: white;
+        background: #854836;
+        border: none;
+        font-size: 18px;
+        border-radius: 6px;
+        padding: 15px 20px;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+        transition: all 200ms ease-in-out;
+    }
+
+    button:hover{
+        opacity: 0.9;
+        cursor: pointer;
+    }
+    .learn-more{
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        font-size: 12px;
+        color: #211426;
+    }
+
+    .learn-more:hover{
+        text-decoration: underline;
+    }
+    .footer{
+        text-align: center;
+    }
+    .container{
+        
+        border: 1px solid #ebd5d5;
+        border-radius: 10px;
+     background: radial-gradient(circle at 10% 20%, rgb(255, 246, 236) 39.5%, rgba(100, 46, 122, 0.23) 100.2%);
+        max-width: 600px;
+        margin: 30px auto;
+        padding: 30px 60px;
+        box-shadow: 0px 2px 5px rgb(42, 41, 41,0.9);
+    }
+    em{
+        text-align: center;
+    }
+    
+</style>
+
+</head>
+
+
+<body>
+<div class="container">
+    <h1>I love Yogurt</h1>
+
+<h2>Especially Greek Yogurt</h2>
+<hr>
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/153/494/original/cottage-cheese-vs-greek-yogurt-01.jpg?1735213538" alt="" width="300" height="300">
+<hr>
+<p> <strong>Amazing Fact About Greek Yogurt</strong> <br>
+Greek yogurt contains about twice as much protein as regular yogurt, making it a fantastic choice for those looking to build muscle, feel fuller longer, or maintain a healthy diet.
+<br> <br>
+<em>Health Benefits of Greek Yogurt</em> <br>
+Boosts Digestive Health: Loaded with probiotics, it promotes a healthy gut and improves digestion. <br> <br>
+Strengthens Bones: Rich in calcium, Greek yogurt supports bone health and reduces the risk of osteoporosis. <br> <br>
+Helps in Weight Management: High in protein, it keeps you feeling full and satisfied, reducing overeating. <br> <br>
+Supports Muscle Recovery: Perfect for post-workout snacks, its protein content helps repair and build muscles. <br> <br>
+Heart-Friendly: Low in saturated fat and high in nutrients, Greek yogurt is a heart-healthy addition to your diet. <br> <br>
+Versatile and delicious, Greek yogurt can be enjoyed on its own or as a base for smoothies, dips, and desserts. Make it a staple in your healthy lifestyle! <br>
+
+</p>
+<a href="https://www.webmd.com/search?query=greek+yogurt" target="_blank" class="learn-more">Learn more on WebMD</a>
+
+<button>Buy Greek Yogurt</button>
+
+<p class="footer">This page was built by Charwekey Rabi Sabutey</p>
+</div>
+
+<script>
+function buyYogurt(){
+    let name = prompt("What is your name?");
+    let email= prompt("What is your email address?");
+    let emoji= prompt(" What is your favourite emoji?");
+
+    alert(
+        `Thank ${name}! We'll be in touch by email, meanwhile we have lot of Yogurt! ${emoji}`
+    );
+}
+
+
+    let button= document.querySelector("button")
+    button.addEventListener("click" , buyYogurt)
+</script>
+</body>
+</html>
